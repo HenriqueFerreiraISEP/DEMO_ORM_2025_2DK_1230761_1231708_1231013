@@ -8,4 +8,13 @@ public class Automovel {
     public void novaClasse(String classe) {
         this.classe = classe;
     }
+
+    @Override
+    public String toString() {
+        return "Automovel{" +
+                "nome='" + nome + '\'' +
+                ", portas=" + portas +
+                ", classe='" + classe + '\'' +
+                '}';
+    }
 }
