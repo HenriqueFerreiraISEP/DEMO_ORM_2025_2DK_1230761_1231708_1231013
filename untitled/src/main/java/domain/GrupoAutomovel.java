@@ -13,4 +13,19 @@ public class GrupoAutomovel {
     public void novoNumPortas(Integer portas) {
         this.portas = portas;
     }
+
+    public void novaClasse(String classe) {
+        this.classe = classe;
+    }
+
+    @Override
+    public String toString() {
+        return "Automovel{" +
+                "nome='" + nome + '\'' +
+                ", portas=" + portas +
+                ", classe='" + classe + '\'' +
+                '}';
+    }
 }
+
+
