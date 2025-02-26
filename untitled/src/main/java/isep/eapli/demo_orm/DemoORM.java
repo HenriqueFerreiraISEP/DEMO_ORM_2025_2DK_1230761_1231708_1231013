@@ -1,6 +1,6 @@
-package pt.ipp.isep.dei;
+package isep.eapli.demo_orm;
 
-public class Main {
+public class DemoORM {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
