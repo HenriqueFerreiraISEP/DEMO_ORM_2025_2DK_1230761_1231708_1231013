@@ -18,6 +18,7 @@ public class GrupoAutomovel {
         this.classe = classe;
     }
 
+
     @Override
     public String toString() {
         return "Automovel{" +
