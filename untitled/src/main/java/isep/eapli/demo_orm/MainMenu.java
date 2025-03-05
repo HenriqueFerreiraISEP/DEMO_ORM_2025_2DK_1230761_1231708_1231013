@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package isep.eapli.demo_orm.apresentacao;
+package isep.eapli.demo_orm;
 
+import isep.eapli.demo_orm.aplicacao.GrupoAutomovelUI;
 import isep.eapli.demo_orm.util.Console;
 
 /**
@@ -12,6 +13,7 @@ import isep.eapli.demo_orm.util.Console;
  * @author mcn
  */
 public class MainMenu {
+	private static  final GrupoAutomovelUI ui = new GrupoAutomovelUI();
     public static void mainLoop() {
 		int opcao = 0;
 		do {
@@ -22,11 +24,11 @@ public class MainMenu {
 					System.out.println("fim ...");
 					break;
 				case 1:
-					System.out.println("Ainda não implementado ...");
+					ui.registarGA();
 					break;
 
 				case 2:
-					System.out.println("Ainda não implementado ...");
+					ui.listarGAs();
 					break;
 
 				
