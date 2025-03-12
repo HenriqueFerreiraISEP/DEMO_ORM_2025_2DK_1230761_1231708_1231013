@@ -7,11 +7,9 @@ import jakarta.persistence.Persistence;
 
 public class DemoORM {
     public static void main(String[] args) {
-        GrupoAutomovel grupoAutomovel = new GrupoAutomovel();
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("DEMO_ORMPU");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(grupoAutomovel);
         entityManager.getTransaction().commit();
         entityManager.close();
         entityManagerFactory.close();
